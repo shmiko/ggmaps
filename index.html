@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"
+      content="initial-scale=1.0, user-scalable=no"/>
+
+
+<!-- Add the base url for your web server here, 
+e.g. http://localhost:8080/gmaps/pluralsight -->
+<base href="http:localhost:8080">	
+<link rel="stylesheet" type="text/css" href="ggmaps.css">
+<!-- Obtain your Google Maps API key and add it here --></!-->
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDyuMEpvjNHZS8ACf1rJPhxMOODrfJyL4">
+</script>
+
+
+</head>
+<body>
+<div>
+    <button id="btnTerrain">Terrain</button>
+    <button id="btnRoadmap">Roadmap</button>
+    <button id="btnSatellite">Satellite</button>
+    <button id="btnHybrid">Hybrid</button>
+</div>
+<div>
+    <input id="address" type="textbox" value="Knighton, Powys" style="width:300px;">
+    <input type="button" value="Geocode" onclick="geocodeAddress()">
+</div>
+<div>
+	<input id="start" type="textbox" value="" style="width:300px;">
+	<input type="button" value="Get Route" onclick="calcRoute()">
+</div>
+<div id="directionsPanel" style="float:right;width:30%;height 100%"></div>
+<div id="mapDiv"></div>
+<div id="coordsDiv"></div>
+<script type="text/javascript" src="ggmaps.js"></script>
+</body>
+</html>
