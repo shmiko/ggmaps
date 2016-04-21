@@ -250,7 +250,7 @@ function geocodeAddress() {
             map.setZoom(17);
             map.panTo(marker.position)
         } else {
-            alert("Geocode failed with the following error: " + status);
+            alert("Geocode failed. The error is: " + status);
         }
     });
 }
