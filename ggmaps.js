@@ -101,7 +101,7 @@ function addMarkers() {
         icon: image,
         position: new google.maps.LatLng(52.343866, -3.0492420),
         map: map,
-        title: "The Knighton Hotel"
+        title: "The big Hotel"
     });
 
 }
