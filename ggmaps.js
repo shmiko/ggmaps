@@ -290,7 +290,7 @@ function calcRoute() {
         if (status == google.maps.DirectionsStatus.OK) {
             directionsDisplay.setDirections(result);			
         } else {
-			alert("Could not calculate directions. Try again, or buy a map!");
+			alert("Could not calculate directions. Try again!");
 		}
     });
 }
