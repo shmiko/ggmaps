@@ -229,7 +229,7 @@ function getElevation(event) {
                 alert("No results found");
             }
         } else {
-            alert("Elevation service failed due to: " + status);
+            alert("Elevation service failed. Error is: " + status);
         }
     });
 }
